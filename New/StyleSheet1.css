@@ -1,0 +1,246 @@
+﻿body {
+    background-color: #fff;
+}
+
+div.aligned {
+    text-align: center;
+}
+
+
+div#nav-menu ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #c3eed2;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+div#nav-menu li {
+    float: left;
+    border: 1px solid #fac0ac;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+    div#nav-menu li:last-child {
+        border-right: none;
+    }
+
+    div#nav-menu li a {
+        display: block;
+        color: #a7662b;
+        text-align: center;
+        padding: 12px 14px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+div#nav-menu a:hover {
+    background-color: #fac0ac;
+    color: black;
+}
+
+div#nav-menu li a:active {
+    background-color: #fac0ac;
+}
+
+footer {
+    background-color: #c3eed2;
+    color: #a7662b;
+}
+
+hr {
+    width: 100%;
+    text-align: left;
+}
+/************************************************************************************
+Default
+*************************************************************************************/
+div.container {
+    width: 100%;
+    background-color: #c3eed2;
+    border-bottom: 1px solid #fac0ac;
+    position: relative;
+    margin: 0px 0px 15px;
+}
+
+div.products {
+    width: 1000px;
+    display: table;
+    margin: auto;
+}
+
+    div.products ul,
+    div.products ul li {
+        float: left;
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+    }
+
+    div.products ul {
+        width: 100%;
+        background-color: aqua;
+        margin-top: 20px;
+    }
+
+        div.products ul li {
+            width: 25%;
+        }
+
+div.product {
+    float: left;
+    width: 240px;
+    background-color: #c3eed2;
+    border-bottom: 1px solid #fac0ac;
+    position: relative;
+    margin-top:20px;
+    margin-left:5px;
+}
+
+    div.product a {
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+
+        div.product a.img {
+            margin-top: 10px;
+        }
+
+            div.product a.img img {
+                height: 170px;
+                max-width: 100%;
+                border-bottom: #fac0ac 5px solid;
+            }
+
+        div.product a.name {
+            font-weight: bolder;
+            color: black;
+            font-size: 13px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+            div.product a.name:hover {
+                color: red;
+            }
+
+    div.product div {
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+        text-indent: 10px;
+        margin: 10px 0 10px 0;
+        float: left;
+        width: 100%;
+    }
+
+    div.product a.cart {
+        border-top: #fac0ac 1px solid;
+        background-color: red;
+        line-height: 30px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+    }
+
+        div.product a.cart:hover {
+            background-color: gray;
+            color: white;
+        }
+
+/************************************************************************************
+Product Page
+*************************************************************************************/
+
+.single-item {
+    margin: auto;
+    margin-top:20px;
+    height: 350px;
+    width: 80%;
+    border: solid 6px #fff;
+    border-radius: 10px;
+    background: #f5f5f5;
+    box-shadow: 0 30px 20px -20px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+}
+
+.left-set{
+    position: relative;
+    width: 40%;
+    height: 100%;
+}
+.right-set {
+    position: relative;
+    width: 60%;
+    height: 100%;
+}
+
+.left-set {
+    float: left;
+    overflow: hidden;
+}
+
+    .left-set img {
+        align-content: center;
+        
+        margin: 15px 0 0 15px;      
+        height: 300px;
+        width: 300px;
+    }
+
+.right-set {
+    float: right;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.name {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+
+
+.price {
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.description p {
+    font-size: 0.9rem;
+    text-align: justify;
+    hyphens: auto;
+}
+
+
+
+div.btn {
+    margin-left:130px;
+    margin-top:50px;
+    text-align:center;
+    width: 106px;
+    height: 47px;
+    cursor: pointer;
+    background: none;
+    border: solid 2px #111;
+    border-radius: 4px;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    transition: all 0.4s ease;
+}
+
+button p{
+    text-align:center;
+}
+
+    button:hover {
+        background: #70e1f5;
+    }

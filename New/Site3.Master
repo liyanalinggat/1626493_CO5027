@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site3.master.cs" Inherits="New.Site3" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link href="StyleSheet1.css" rel="stylesheet" type="text/css"/>
+    
+
+</head>
+<body runat="server">
+    <form id="form1" >
+        <div id="container">
+        <div class="aligned">
+              
+            <img alt="" src="temp.jpg" id="banner" /></div>
+
+        <div id="nav-menu">
+            <ul>
+                <li><a href="~/Default.aspx" runat="server">Home</a></li>
+                <li><a href="~/About.aspx" runat="server">About</a></li>
+                <li><a href="~/Contact.aspx" runat="server">Contact</a></li>
+                <li><a href="~/Product.aspx" runat="server">Product</a></li>
+                <li><a href="~/Cart.aspx" runat="server">Cart</a></li>
+                <li><a href="~/Login.aspx" runat="server">Login</a></li>
+            </ul>
+                
+            </div>
+        </div>
+       <div class="container maincontent">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+           </div>
+         
+            <footer>
+                <p>&copy; 2018 Liyana Linggat</p>
+            </footer>
+           
+    </form>
+</body>
+
+</html>

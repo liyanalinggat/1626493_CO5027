@@ -10,7 +10,7 @@
 namespace New {
     
     
-    public partial class SiteMaster {
+    public partial class Site3 {
         
         /// <summary>
         /// MainContent control.
