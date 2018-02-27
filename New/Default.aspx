@@ -22,7 +22,7 @@
                  <a href="#" class="cart">Add to Cart</a>
                  </div>
             
-
+    
        </li>
 <li>
        	 <div class="product">
