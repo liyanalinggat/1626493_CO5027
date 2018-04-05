@@ -12,7 +12,7 @@
 
 </head>
 <body runat="server">
-    <form id="form1" >
+    <form id="form1" runat="server">
         <div id="container">
         <div class="aligned">
               
@@ -21,8 +21,7 @@
         <div id="nav-menu">
             <ul>
                 <li><a href="~/Default.aspx" runat="server">Home</a></li>
-                <li><a href="~/About.aspx" runat="server">About</a></li>
-                <li><a href="~/Contact.aspx" runat="server">Contact</a></li>
+                <li><a href="~/Contact.aspx" runat="server">Contact Us</a></li>
                 <li><a href="~/Product.aspx" runat="server">Product</a></li>
                 <li><a href="~/Cart.aspx" runat="server">Cart</a></li>
                 <li><a href="~/Login.aspx" runat="server">Login</a></li>
