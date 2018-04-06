@@ -36,6 +36,7 @@ namespace New
         {
             var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
             var userIdentity = usermanager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
+
             authenticationManager.SignIn(new AuthenticationProperties() { }, userIdentity);
         }
 

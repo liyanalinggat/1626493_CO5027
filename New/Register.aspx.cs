@@ -19,23 +19,32 @@ namespace New
         protected void btnReg_Click(object sender, EventArgs e)
         {
             var identityDbContext = new IdentityDbContext("IdentityConnectionString");
+            var roleStore = new RoleStore<IdentityRole>(identityDbContext);
+            var roleManager = new RoleManager<IdentityRole>(roleStore);
             var userStore = new UserStore<IdentityUser>(identityDbContext);
             var manager = new UserManager<IdentityUser>(userStore);
 
+
+            IdentityRole adminRole = new IdentityRole("Admin");
+            roleManager.Create(adminRole);
             var user = new IdentityUser()
             {
-                UserName = txtRegEmail.Text,
-                Email = txtRegEmail.Text
+                UserName = txtRegUserName.Text,
+                Email = txtRegUserName.Text
             };
-
             IdentityResult result = manager.Create(user, txtRegPassword.Text);
+
             if (result.Succeeded)
             {
-                //todo: log them in
+                litRegisterError.Text = "Successfully registered.";
+                txtRegUserName.Text = "";
+                txtRegPassword.Text = "";
+                manager.AddToRole(user.Id, "Admin");
+                manager.Update(user);
             }
             else
             {
-                litRegisterError.Text = "An error has occured: " + result.Errors.FirstOrDefault();
+                litRegisterError.Text = "An error has occured:" + result.Errors.FirstOrDefault();
             }
         }
     }
