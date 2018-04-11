@@ -163,23 +163,24 @@ Product Page
     box-shadow: 0 30px 20px -20px rgba(0,0,0,0.3);
 }
 
-.left-set{
+.left-set {
     position: relative;
     width: 40%;
     height: 100%;
+    float: left;
+    overflow: hidden;
 }
 .right-set {
     position: relative;
     width: 60%;
     height: 100%;
+    float: right;
+    padding: 2rem 1rem;
 }
 
-.left-set {
-    float: left;
-    overflow: hidden;
-}
 
-    .left-set img {
+
+   .left-set img {
         align-content: center;
         
         margin: 15px 0 0 15px;      
@@ -187,19 +188,15 @@ Product Page
         width: 300px;
     }
 
-.right-set {
-    float: right;
-    padding: 2rem 1rem;
-}
+
 
 .name {
     font-weight: bold;
-}
-
-.name {
     font-size: 1.4rem;
     line-height: 2rem;
 }
+
+
 
 
 
@@ -218,8 +215,7 @@ Product Page
 
 
 .btn {
-    margin-left:130px;
-    margin-top:50px;
+   
     text-align:center;
     width: 106px;
     height: 47px;
@@ -372,7 +368,7 @@ footer p a {
 .button {
     position: relative;
     bottom: 155px;
-    width: 100%;
+    width: 30%;
 }
 
     .button a {
