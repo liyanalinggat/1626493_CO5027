@@ -14,20 +14,26 @@
 <body runat="server">
     <form id="form1" runat="server">
         <div id="container">
-        <div class="aligned">
-              
-            <img alt="" src="temp.jpg" id="banner" /></div>
 
-        <div id="nav-menu">
-            <ul>
+        <nav id="navbar" class="">
+  <div class="nav-wrapper">
+    <!-- Navbar Logo -->
+    <div class="logo">
+      <!-- Logo Placeholder for Inlustration -->
+      <a href="~/Default.aspx"> Bath & Body Works</a>
+    </div>
+
+    <!-- Navbar Links -->
+    <ul id="menu">
                 <li><a href="~/Default.aspx" runat="server">Home</a></li>
                 <li><a href="~/Contact.aspx" runat="server">Contact Us</a></li>
                 <li><a href="~/Product.aspx" runat="server">Product</a></li>
                 <li><a href="~/Cart.aspx" runat="server">Cart</a></li>
                 <li><a href="~/Login.aspx" runat="server">Login</a></li>
-            </ul>
-                
-            </div>
+    </ul>
+  </div>
+</nav>
+
         </div>
        <div class="container maincontent">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">

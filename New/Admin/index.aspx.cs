@@ -19,5 +19,10 @@ namespace New.Admin
         {
             HttpContext.Current.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Admin/List.aspx");
+        }
     }
 }
