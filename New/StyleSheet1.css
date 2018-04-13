@@ -1,12 +1,12 @@
 ﻿body {
-    background-color: #fff;
+    background-color: #c70039;
 }
 
 
 
 footer {
-    background-color: #c3eed2;
-    color: #a7662b;
+    background-color: #c70039;
+    color: #c70039;
 }
 
 hr {
@@ -18,7 +18,7 @@ Default
 *************************************************************************************/
 .container {
     width: 100%;
-    background-color: #c3eed2;
+    background-color: #c70039;
     border-bottom: 1px solid #fac0ac;
     position: relative;
 }
