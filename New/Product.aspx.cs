@@ -13,5 +13,14 @@ namespace New
         {
 
         }
+
+        protected void btnPurchase_Click(object sender, EventArgs e)
+        {
+            decimal postagePackagingCost = 3.95m;
+            decimal Product_Price = 10.00m;
+            int Product_Quantity = int.Parse(DropDownList.SelectedValue);
+            decimal subTotal = (Product_Quantity * Product_Price);
+            decimal total = subTotal + postagePackagingCost;
+        }
     }
 }
